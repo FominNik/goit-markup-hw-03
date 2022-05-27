@@ -1,0 +1,249 @@
+:root{
+    --hader-text-logo:#000000;  
+--text-accent: #FFFFFF;
+--accent-color:#2196F3; 
+--text-font:#212121;
+--background-color: #2F303A;
+--color-contact: #757575;
+--color-header:#EEEEEE;
+--botom-bg:#F5F4FA;
+--header-botom-color:#188CE8;
+--rgba:rgba(255, 255, 255, 0.6);
+}
+
+
+
+.list{
+    list-style: none;
+
+}
+
+.link{
+    text-decoration: none;
+}
+/*<!--HEADER-->*/
+.body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-font)
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color)
+}
+
+.logo-header {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--hader-text-logo);
+
+}
+
+.logo-blue{
+    color: var(--accent-color);
+}
+
+.menu-link{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--text-font);
+
+}
+
+.mail-link {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--color-contact);
+
+}
+.phone-number-link {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--color-contact);
+
+}
+
+.сontact:hover, 
+.сontact:focus {
+    color: var(--accent-color);
+}
+/*<!--HEADER-->*/
+
+/*<!--MAIN-->*/
+.main-hero {
+    background: var(--background-color);
+}
+
+.main-title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--text-accent);
+}
+
+.main-btn {
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+color: var(--text-accent);
+background:  var(--accent-color);
+cursor: pointer;
+}
+
+
+
+.web-btn:hover,
+.web-btn:focus {
+background: var(--header-botom-color);
+
+}
+
+.sub-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-font); 
+}
+
+.sub-text {
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--color-contact);
+
+}
+.text-What-are-we-doing {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+color: var(--text-font);
+}
+
+.text-team {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+color: var(--text-font);
+}
+
+.specialist-name {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--text-font);
+}
+
+.specialist-position {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-contact);
+}
+/*<!--MAIN-->*/
+
+/*<!--FOOTER-->*/
+.footer{
+    background: var(--background-color);
+}
+
+.footer-logo {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--text-accent);
+
+}
+
+.footer-web-blue{
+    color: var(--accent-color);
+}
+
+.address-footer-link{
+font-style: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--text-accent);
+}
+
+.footer-mail{
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+    
+}
+
+.footer-phone-number{
+font-size: 14px;
+line-height: 1.71;
+ letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+    
+}
+/*<!--FOOTER-->*/
+
+/*<!--PORTFOLIO-->*/
+.portfolio-button{
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+color: var(--text-font);
+background: var(--botom-bg);
+border: 1px solid var(--color-header);
+cursor: pointer;
+
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+background: var(--accent-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+color: var(--text-accent);
+
+}
+
+.project-item-name{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--text-font);
+}
+.project-item-product{
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: var(--color-contact);
+}
