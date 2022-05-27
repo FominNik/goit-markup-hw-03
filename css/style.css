@@ -1,5 +1,5 @@
 :root{
-    --hader-text-logo:#000000;  
+--hader-text-logo:#000000;  
 --text-accent: #FFFFFF;
 --accent-color:#2196F3; 
 --text-font:#212121;
@@ -11,21 +11,82 @@
 --rgba:rgba(255, 255, 255, 0.6);
 }
 
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}   
 
-.list{
+img {
+    display: block;
+}
+
+.list {
     list-style: none;
 
 }
 
-.link{
+.link {
     text-decoration: none;
 }
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+
 /*<!--HEADER-->*/
+/*<!--GEOMETRY-->*/
+.page-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+display: flex;
+align-items: center;
+}
+
+.сontact-info {
+    display: flex;
+    
+}
+
+
 .body{
     font-family: 'Roboto', sans-serif;
 }
 
+.logo-header{
+    margin-right: 90px ;
+}
+
+.nav-link:not(:last-child) {
+    margin-right: 50px;
+
+}
+
+
+/*<!--GEOMETRY-->*/
 .menu-link {
     font-weight: 500;
     font-size: 14px;
