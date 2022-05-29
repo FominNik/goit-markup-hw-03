@@ -9,6 +9,8 @@
 --botom-bg:#F5F4FA;
 --header-botom-color:#188CE8;
 --rgba:rgba(255, 255, 255, 0.6);
+--border-portfolio:rgba(238, 238, 238, 1);
+--border-studio:#ECECEC;
 }
 
 h1,
@@ -49,8 +51,31 @@ img {
 }
 
 
-/*<!--HEADER-->*/
-/*<!--GEOMETRY-->*/
+
+/*<!--GEOMETRY HEADER-->*/
+
+
+.header{
+    border-bottom: 1px solid var(--border-studio);
+}
+.visually-hidden { 
+    position: absolute; 
+     width: 1px; 
+     height: 1px; 
+     margin: -1px; 
+     border: 0; 
+     padding: 0; 
+     white-space: nowrap; 
+     clip-path: inset(100%); 
+     clip: rect(0 0 0 0); 
+     overflow: hidden; 
+    } 
+
+.section{
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
 .page-header-container {
     display: flex;
     align-items: center;
@@ -68,7 +93,8 @@ align-items: center;
 
 .сontact-info {
     display: flex;
-    
+    margin-left: auto;
+   
 }
 
 
@@ -86,7 +112,18 @@ align-items: center;
 }
 
 
-/*<!--GEOMETRY-->*/
+.сontact-mail {
+    margin-right: 50px;
+}
+
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+
+
+/*<!--GEOMETRY HEADER-->*/
 .menu-link {
     font-weight: 500;
     font-size: 14px;
@@ -130,7 +167,9 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--color-contact);
 
+
 }
+
 .phone-number-link {
 font-weight: 500;
 font-size: 14px;
@@ -140,15 +179,86 @@ color: var(--color-contact);
 
 }
 
+.сontact-mail:hover, 
+.сontact-mail:focus {
+    color: var(--accent-color);
+}
+
 .сontact:hover, 
 .сontact:focus {
     color: var(--accent-color);
 }
-/*<!--HEADER-->*/
+
+
+/*<!--GEOMETRY HEADER-->*/
 
 /*<!--MAIN-->*/
+
+/*<!--GEOMETRY MAIN-->*/
+.item-section{
+    padding-top: 95px;
+    padding-bottom: 95px;
+
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+        
+}
+
+.item {
+    flex-basis: calc((100% - 120px) / 4);
+}
+
+.item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+
+
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.work-picture:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+.work-picture {
+    flex-basis: calc((100% - 90)/3);
+}
+.team {
+    background: var(--botom-bg)
+}
+
+.specialists {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.specialist-item:not(:nth-child(4n)){
+    margin-right: 30px;
+}
+
+.specialist-item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    flex-basis: calc((100% - 120)/4);
+    
+}
+
+
+/*<!--GEOMETRY MAIN-->*/
+
 .main-hero {
     background: var(--background-color);
+   
+
 }
 
 .main-title {
@@ -159,6 +269,7 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--text-accent);
+
 }
 
 .main-btn {
@@ -168,6 +279,13 @@ line-height: 1.88;
 color: var(--text-accent);
 background:  var(--accent-color);
 cursor: pointer;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;
+min-width: 200;
+border-radius: 4px;
+padding: 10px 32px;
 }
 
 
@@ -177,6 +295,8 @@ cursor: pointer;
 background: var(--header-botom-color);
 
 }
+
+
 
 .sub-item {
     font-weight: 700;
@@ -192,22 +312,26 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--color-contact);
-
+margin-top: 10px;
 }
-.text-What-are-we-doing {
+.text-what-are-we-doing {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
+text-align: center;
 letter-spacing: 0.03em;
 color: var(--text-font);
+margin-bottom: 50px;
 }
 
 .text-team {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
+text-align: center;
 letter-spacing: 0.03em;
 color: var(--text-font);
+margin-bottom: 50px;
 }
 
 .specialist-name {
@@ -217,6 +341,7 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--text-font);
+margin-top: 30px;
 }
 
 .specialist-position {
@@ -225,6 +350,9 @@ color: var(--text-font);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-contact);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
 }
 /*<!--MAIN-->*/
 
@@ -243,36 +371,65 @@ color: var(--text-accent);
 
 }
 
-.footer-web-blue{
-    color: var(--accent-color);
+.section-footer{
+    padding-top: 65px;
+    padding-bottom: 55px;
+
 }
 
-.address-footer-link{
+.footer-web-blue{
+    color: var(--accent-color);
+} 
+  
+.address-footer{
+    margin-top: 20px;
+}
+
+.address-footer-link {
 font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--text-accent);
+
+}
+.footer-contact{
+    margin-bottom: 9px;
 }
 
-.footer-mail{
+.footer-mail {
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
-    
+font-style: normal;
 }
 
 .footer-phone-number{
 font-size: 14px;
 line-height: 1.71;
- letter-spacing: 0.03em;
+letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
-    
+font-style: normal;
 }
 /*<!--FOOTER-->*/
 
 /*<!--PORTFOLIO-->*/
+.portfolio-buttons-nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 95px;
+    padding-bottom: 50px;
+
+}
+
+
+
+.portfolio-button-item:not(:nth-child(5n)){
+    margin-right: 8px;
+
+}
+
 .portfolio-button{
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
@@ -283,6 +440,8 @@ color: var(--text-font);
 background: var(--botom-bg);
 border: 1px solid var(--color-header);
 cursor: pointer;
+padding: 6px 22px;
+border-radius: 4px;
 
 }
 
@@ -295,7 +454,39 @@ color: var(--text-accent);
 
 }
 
-.project-item-name{
+.list-projects {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.project-item {
+    flex-basis: calc((100% - 90)/3);
+   
+    
+}
+
+.project-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+.project-item:not(:nth-last-child(-n+3)) {
+margin-bottom: 30px;
+}
+
+.text-projekt-item {
+    
+    border: 1px solid var(--border-portfolio);
+    border-top: none;
+    padding: 20px 24px;
+    
+}
+.img-project {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.project-item-name {
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
