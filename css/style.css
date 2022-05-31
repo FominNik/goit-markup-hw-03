@@ -72,8 +72,8 @@ img {
     } 
 
 .section{
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .page-header-container {
@@ -112,7 +112,7 @@ align-items: center;
 }
 
 
-.сontact-mail {
+.mail {
     margin-right: 50px;
 }
 
@@ -120,7 +120,12 @@ align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
 }
-
+.main-title {
+    margin-right: auto;
+    margin-left: auto;
+    width: 696px;
+    
+}
 
 
 /*<!--GEOMETRY HEADER-->*/
@@ -208,19 +213,23 @@ color: var(--color-contact);
 }
 
 .item {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .item:not(:nth-child(4n)) {
     margin-right: 30px;
 }
 
-
+.what-are-we-doing-section {
+    padding-top: 0;
+   }
+   
 
 
 .work {
     display: flex;
     flex-wrap: wrap;
+    
 
 }
 
@@ -236,8 +245,7 @@ color: var(--color-contact);
 
 .specialists {
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
 
 .specialist-item:not(:nth-child(4n)){
@@ -249,7 +257,11 @@ color: var(--color-contact);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     flex-basis: calc((100% - 120)/4);
-    
+}
+
+.specialist-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
@@ -257,8 +269,8 @@ color: var(--color-contact);
 
 .main-hero {
     background: var(--background-color);
-   
-
+    padding-top: 200px;
+    padding-bottom: 280px;
 }
 
 .main-title {
@@ -269,29 +281,33 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--text-accent);
-
 }
 
 .main-btn {
-font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
-color: var(--text-accent);
-background:  var(--accent-color);
-cursor: pointer;
-display: flex;
-margin-left: auto;
-margin-right: auto;
-margin-top: 30px;
-min-width: 200;
-border-radius: 4px;
-padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--text-accent);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 32px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    
 }
 
 
 
-.web-btn:hover,
-.web-btn:focus {
+.main-btn:hover,
+.main-btn:focus {
 background: var(--header-botom-color);
 
 }
@@ -341,7 +357,7 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--text-font);
-margin-top: 30px;
+
 }
 
 .specialist-position {
@@ -351,7 +367,7 @@ margin-top: 30px;
     letter-spacing: 0.03em;
     color: var(--color-contact);
     margin-top: 10px;
-    margin-bottom: 30px;
+    
     
 }
 /*<!--MAIN-->*/
@@ -359,6 +375,8 @@ margin-top: 30px;
 /*<!--FOOTER-->*/
 .footer{
     background: var(--background-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .footer-logo {
@@ -368,12 +386,6 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--text-accent);
-
-}
-
-.section-footer{
-    padding-top: 65px;
-    padding-bottom: 55px;
 
 }
 
@@ -393,7 +405,7 @@ letter-spacing: 0.03em;
 color: var(--text-accent);
 
 }
-.footer-contact{
+.footer-contact:not(:last-child){
     margin-bottom: 9px;
 }
 
@@ -418,8 +430,7 @@ font-style: normal;
 .portfolio-buttons-nav {
     display: flex;
     justify-content: center;
-    padding-top: 95px;
-    padding-bottom: 50px;
+    margin-bottom:  50px;
 
 }
 
@@ -492,6 +503,7 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--text-font);
+margin-bottom: 4px;
 }
 .project-item-product{
 font-size: 16px;
