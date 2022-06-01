@@ -270,7 +270,7 @@ color: var(--color-contact);
 .main-hero {
     background: var(--background-color);
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 }
 
 .main-title {
@@ -373,10 +373,10 @@ color: var(--text-font);
 /*<!--MAIN-->*/
 
 /*<!--FOOTER-->*/
-.footer{
+.footer {
     background: var(--background-color);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
